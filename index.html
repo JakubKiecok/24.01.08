@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lewo">
+        <div class="gora">
+            <div class="size">
+                <div>Font size</div>
+                <input type="text" id="size">
+                <label for="size"></label>
+            </div>
+            <br>
+            <div class="color">
+                <div>Font color</div>
+                <input type="text" id="color">
+                <label for="color"></label>
+            </div>
+            <br>
+            <div class="style">
+                <div>Font style</div>
+                <input type="text" id="style">
+                <label for="style"></label>
+            </div>
+            <br>
+            <div class="spacing">
+                <div>Letter spacing</div>
+                <input type="text" id="spacing">
+                <label for="spacing"></label>
+            </div>
+            <br>
+            <div class="guziczki">
+                <button id="reset1" onclick="reset1()">Reset</button>
+                <button id="wyslij1" onclick="getValue1()">Wyslij</button>
+            </div>
+            <br>
+        </div>
+        <div class="dol">
+            <div class="bcolor">
+                <div>Border color</div>
+                <input type="text" id="bcolor">
+                <label for="bcolor"></label>
+            </div>
+            <br>
+            <div class="bstyle">
+                <div>Border style</div>
+                <input type="text" id="bstyle">
+                <label for="bstyle"></label>
+            </div>
+            <br>
+            <div class="bradius">
+                <div>Border radius</div>
+                <input type="text" id="bradius">
+                <label for="bradius"></label>
+            </div>
+            <br>
+            <div class="bguziczki">
+                <button id="reset2" onclick="reset2()">Reset</button>
+                <button id="wyslij2" onclick="getValue2()">Wyslij</button>
+            </div>
+        </div>
+    </div>
+    <div class="srodek">
+        <main id="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati asperiores fugit ex architecto iure, aut repellat. Libero, nisi repellendus? Dolore nemo exercitationem reiciendis laboriosam nam quasi accusamus. Quod facere harum enim alias mollitia id! Maiores porro fugit cum blanditiis consequatur, <span id="span1">fuga officia?</span> Eum ullam quia debitis aliquam explicabo iure quam blanditiis ex magnam deserunt corporis pariatur tempore, quaerat non repudiandae! Veniam, ex. Autem assumenda quibusdam, cumque sed deserunt nemo. Corporis ab eius itaque repellat ducimus illo consectetur architecto quisquam minima odit ratione asperiores placeat dolor ullam laboriosam voluptatum, suscipit quis! Corporis fugiat minima tempora sequi assumenda iste adipisci a, officia praesentium aperiam et voluptatibus asperiores nostrum suscipit eum distinctio optio! <span id="span2">Alias aut corrupti nesciunt quasi nostrum deserunt,</span> ab omnis sit, illo, nulla vitae delectus similique id pariatur reiciendis! Ipsum perferendis exercitationem optio itaque porro amet unde assumenda nesciunt cupiditate totam velit excepturi, architecto, similique illo vel necessitatibus, ab tempore veniam? Nisi, iure at dolores vero tempore non amet id beatae aspernatur saepe obcaecati, numquam porro sed eveniet consectetur facilis possimus illum recusandae distinctio totam ad. Dolores ipsum, harum atque eligendi voluptatem excepturi suscipit. Nemo eius voluptatum dicta voluptas neque hic, assumenda, perferendis odit iste temporibus quis est, id laboriosam quos sequi dolorem repudiandae voluptate cumque magnam. Nisi, mollitia vero. Autem cupiditate architecto, ipsam aspernatur minus id? Reiciendis voluptates voluptas ad ea aperiam consectetur natus minus, tenetur ullam expedita sint perspiciatis ex delectus quibusdam esse amet qui placeat ratione exercitationem mollitia eum nemo quis. Atque ipsa sed facilis reprehenderit vero necessitatibus porro rem praesentium a officia animi tempora dicta ipsum quos ad possimus error placeat, autem repellat nostrum corporis esse. Quia rem provident nihil qui dicta blanditiis temporibus iure repellat iusto, recusandae enim! Eius accusamus, ullam at quo non minus quod laborum enim eligendi qui voluptatibus perferendis nulla officia neque quos praesentium saepe ea. Consectetur totam libero alias inventore nulla veniam soluta quia qui <span id="span3">corrupti tempore dolore maiores, eaque repellat possimus quo voluptates,</span> quisquam adipisci repudiandae provident dignissimos explicabo. Sit, vero? Voluptas unde, inventore incidunt temporibus eveniet eos veritatis! Assumenda dolorem ratione omnis quidem officiis numquam, magnam veniam, quam obcaecati recusandae distinctio, minus nam unde. Praesentium temporibus maiores culpa aliquid voluptas vitae nam, perferendis adipisci libero impedit consequuntur veritatis, amet mollitia odit blanditiis quidem, magni ut sit reprehenderit! Optio sit blanditiis, perspiciatis id illo quo doloribus, enim asperiores tenetur eum nobis. Doloremque dolor perspiciatis maiores tempore quidem vero quo eveniet ipsum totam hic natus officia aspernatur sunt, molestias asperiores ducimus placeat neque quas modi eos reiciendis soluta atque! Veniam accusamus ab sit dolores nulla vero, praesentium repellendus expedita alias non id odio quia. Harum accusamus vero optio maxime quos fugiat et dignissimos quis facilis, doloribus ipsum illum consectetur laudantium aspernatur recusandae nisi, debitis sapiente corporis vitae deleniti voluptatibus, laboriosam modi! Vel commodi iste cumque perferendis cupiditate harum eveniet quas est esse minus eligendi nesciunt blanditiis nostrum et reprehenderit ad fugiat tempora ullam in natus repellat, assumenda sapiente? Debitis aut est deserunt eaque sit ratione nemo! Soluta ipsum cumque ad reiciendis.</main>
+        <div class="reset">
+            <button id="reset3" onclick="reset3()">Reset</button>
+        </div>
+        <script>
+            function getValue1(){
+            var inputValue1 = document.getElementById("size").value;
+            document.getElementById("main").style.fontSize = inputValue1 + "px";
+            var inputValue2 = document.getElementById("color").value;
+            document.getElementById("main").style.color = inputValue2;
+            var inputValue3 = document.getElementById("style").value;
+            document.getElementById("main").style.fontStyle = inputValue3;
+            var inputValue4 = document.getElementById("spacing").value;
+            document.getElementById("main").style.letterSpacing = inputValue4 + "px";
+        }
+        function getValue2(){
+            var inputValue5 = document.getElementById("bradius").value;
+            document.getElementById("main").style.borderRadius = inputValue5 + "px";
+            var inputValue6 = document.getElementById("bcolor").value;
+            document.getElementById("main").style.borderColor = inputValue6;
+            var inputValue7 = document.getElementById("bstyle").value;
+            document.getElementById("main").style.borderStyle = inputValue7;
+        }
+        function reset1(){
+            document.getElementById("main").style.fontSize = "1rem";
+            document.getElementById("main").style.color = "black";
+            document.getElementById("main").style.fontStyle = "normal";
+            document.getElementById("main").style.letterSpacing = "0px";
+        }
+        function reset2(){
+            document.getElementById("main").style.borderRadius = "0px";
+            document.getElementById("main").style.borderColor = "yellow";
+            document.getElementById("main").style.borderStyle = "solid";
+        }
+        function reset3(){
+            document.getElementById("main").style.fontSize = "1rem";
+            document.getElementById("main").style.color = "black";
+            document.getElementById("main").style.fontStyle = "normal";
+            document.getElementById("main").style.letterSpacing = "0px";
+            document.getElementById("main").style.borderRadius = "0px";
+            document.getElementById("main").style.borderColor = "yellow";
+            document.getElementById("main").style.borderStyle = "solid";
+            document.getElementById("span1").style.fontSize = "1rem";
+            document.getElementById("span1").style.color = "black";
+            document.getElementById("span1").style.fontStyle = "normal";
+            document.getElementById("span1").style.letterSpacing = "0px";
+            document.getElementById("span2").style.fontSize = "1rem";
+            document.getElementById("span2").style.color = "black";
+            document.getElementById("span2").style.fontStyle = "normal";
+            document.getElementById("span2").style.letterSpacing = "0px";
+            document.getElementById("span3").style.fontSize = "1rem";
+            document.getElementById("span3").style.color = "black";
+            document.getElementById("span3").style.fontStyle = "normal";
+            document.getElementById("span3").style.letterSpacing = "0px";
+            document.getElementById("span1").style.borderRadius = "0px";
+            document.getElementById("span1").style.borderColor = "black";
+            document.getElementById("span1").style.borderStyle = "solid";
+            document.getElementById("span1").style.borderWidth = "0px";
+            document.getElementById("span2").style.borderRadius = "0px";
+            document.getElementById("span2").style.borderColor = "black";
+            document.getElementById("span2").style.borderStyle = "solid";
+            document.getElementById("span2").style.borderWidth = "0px";
+            document.getElementById("span3").style.borderRadius = "0px";
+            document.getElementById("span3").style.borderColor = "black";
+            document.getElementById("span3").style.borderStyle = "solid";
+            document.getElementById("span3").style.borderWidth = "0px";
+            document.getElementById("main").style.height = "450px";
+            document.getElementById("main").style.width = "1026px";
+            document.getElementById("main").style.padding = "50px";
+        }
+        </script>
+    </div>
+    <div class="prawo">
+        <div class="gora">
+            <div class="size2">
+                <div>Font size</div>
+                <input type="text" id="size2">
+                <label for="size2"></label>
+            </div>
+            <br>
+            <div class="color2">
+                <div>Font color</div>
+                <input type="text" id="color2">
+                <label for="color2"></label>
+            </div>
+            <br>
+            <div class="style2">
+                <div>Font style</div>
+                <input type="text" id="style2">
+                <label for="style2"></label>
+            </div>
+            <br>
+            <div class="spacing2">
+                <div>Letter spacing</div>
+                <input type="text" id="spacing2">
+                <label for="spacing2"></label>
+            </div>
+            <br>
+            <div class="guziczki">
+                <button id="reset4" onclick="reset4()">Reset</button>
+                <button id="wyslij4" onclick="getValue4()">Wyslij</button>
+            </div>
+            <br>
+        </div>
+        <div class="dol">
+            <div class="bcolor2">
+                <div>Border color</div>
+                <input type="text" id="bcolor2">
+                <label for="bcolor2"></label>
+            </div>
+            <br>
+            <div class="bstyle2">
+                <div>Border style</div>
+                <input type="text" id="bstyle2">
+                <label for="bstyle2"></label>
+            </div>
+            <br>
+            <div class="bradius2">
+                <div>Border radius</div>
+                <input type="text" id="bradius2">
+                <label for="bradius2"></label>
+            </div>
+            <br>
+            <div class="bwidth2">
+                <div>Border width</div>
+                <input type="text" id="bwidth2">
+                <label for="bwidth2"></label>
+            </div>
+            <br>
+            <div class="bguziczki">
+                <button id="reset5" onclick="reset5()">Reset</button>
+                <button id="wyslij5" onclick="getValue5()">Wyslij</button>
+            </div>
+            <br>
+            <div class="suwaki">
+                <div>Szerokosc</div>
+                <input type="range" min="40" max="1200" id="Szerokosc">
+                <div>Wysokosc</div>
+                <input type="range" min="20" max="1500" id="Wysokosc">
+            </div>
+            <br>
+            <div class="mguziczki">
+                <button id="reset6" onclick="reset6()">Reset</button>
+                <button id="wyslij6" onclick="getValue6()">Wyslij</button>
+            </div>
+            <script>
+            function getValue4(){
+            var inputValue1 = document.getElementById("size2").value;
+            document.getElementById("span1").style.fontSize = inputValue1 + "px";
+            var inputValue2 = document.getElementById("color2").value;
+            document.getElementById("span1").style.color = inputValue2;
+            var inputValue3 = document.getElementById("style2").value;
+            document.getElementById("span1").style.fontStyle = inputValue3;
+            var inputValue4 = document.getElementById("spacing2").value;
+            document.getElementById("span1").style.letterSpacing = inputValue4 + "px";
+            var inputValue1 = document.getElementById("size2").value;
+            document.getElementById("span2").style.fontSize = inputValue1 + "px";
+            var inputValue2 = document.getElementById("color2").value;
+            document.getElementById("span2").style.color = inputValue2;
+            var inputValue3 = document.getElementById("style2").value;
+            document.getElementById("span2").style.fontStyle = inputValue3;
+            var inputValue4 = document.getElementById("spacing2").value;
+            document.getElementById("span2").style.letterSpacing = inputValue4 + "px";
+            var inputValue1 = document.getElementById("size2").value;
+            document.getElementById("span3").style.fontSize = inputValue1 + "px";
+            var inputValue2 = document.getElementById("color2").value;
+            document.getElementById("span3").style.color = inputValue2;
+            var inputValue3 = document.getElementById("style2").value;
+            document.getElementById("span3").style.fontStyle = inputValue3;
+            var inputValue4 = document.getElementById("spacing2").value;
+            document.getElementById("span3").style.letterSpacing = inputValue4 + "px";
+            }
+            function getValue5(){
+            var inputValue5 = document.getElementById("bradius2").value;
+            document.getElementById("span1").style.borderRadius = inputValue5 + "px";
+            var inputValue6 = document.getElementById("bcolor2").value;
+            document.getElementById("span1").style.borderColor = inputValue6;
+            var inputValue7 = document.getElementById("bstyle2").value;
+            document.getElementById("span1").style.borderStyle = inputValue7;
+            var inputValue8 = document.getElementById("bwidth2").value;
+            document.getElementById("span1").style.borderWidth = inputValue8 + "px";
+            var inputValue5 = document.getElementById("bradius2").value;
+            document.getElementById("span2").style.borderRadius = inputValue5 + "px";
+            var inputValue6 = document.getElementById("bcolor2").value;
+            document.getElementById("span2").style.borderColor = inputValue6;
+            var inputValue7 = document.getElementById("bstyle2").value;
+            document.getElementById("span2").style.borderStyle = inputValue7;
+            var inputValue8 = document.getElementById("bwidth2").value;
+            document.getElementById("span2").style.borderWidth = inputValue8 + "px";
+            var inputValue5 = document.getElementById("bradius2").value;
+            document.getElementById("span3").style.borderRadius = inputValue5 + "px";
+            var inputValue6 = document.getElementById("bcolor2").value;
+            document.getElementById("span3").style.borderColor = inputValue6;
+            var inputValue7 = document.getElementById("bstyle2").value;
+            document.getElementById("span3").style.borderStyle = inputValue7;
+            var inputValue8 = document.getElementById("bwidth2").value;
+            document.getElementById("span3").style.borderWidth = inputValue8 + "px";
+            }
+            function reset4(){
+            document.getElementById("span1").style.fontSize = "1rem";
+            document.getElementById("span1").style.color = "black";
+            document.getElementById("span1").style.fontStyle = "normal";
+            document.getElementById("span1").style.letterSpacing = "0px";
+            document.getElementById("span2").style.fontSize = "1rem";
+            document.getElementById("span2").style.color = "black";
+            document.getElementById("span2").style.fontStyle = "normal";
+            document.getElementById("span2").style.letterSpacing = "0px";
+            document.getElementById("span3").style.fontSize = "1rem";
+            document.getElementById("span3").style.color = "black";
+            document.getElementById("span3").style.fontStyle = "normal";
+            document.getElementById("span3").style.letterSpacing = "0px";
+            }
+            function reset5(){
+            document.getElementById("span1").style.borderRadius = "0px";
+            document.getElementById("span1").style.borderColor = "black";
+            document.getElementById("span1").style.borderStyle = "solid";
+            document.getElementById("span1").style.borderWidth = "0px";
+            document.getElementById("span2").style.borderRadius = "0px";
+            document.getElementById("span2").style.borderColor = "black";
+            document.getElementById("span2").style.borderStyle = "solid";
+            document.getElementById("span2").style.borderWidth = "0px";
+            document.getElementById("span3").style.borderRadius = "0px";
+            document.getElementById("span3").style.borderColor = "black";
+            document.getElementById("span3").style.borderStyle = "solid";
+            document.getElementById("span3").style.borderWidth = "0px";
+            }
+            function getValue6(){
+                var inputValue9 = document.getElementById("Szerokosc").value
+                document.getElementById("main").style.width = inputValue9 + "px";
+                document.getElementById("main").style.padding = "0px";
+                var inputValue10 = document.getElementById("Wysokosc").value
+                document.getElementById("main").style.height = inputValue10 + "px";
+            }
+            function reset6() {
+                document.getElementById("main").style.height = "450px";
+                document.getElementById("main").style.padding = "50px";
+                document.getElementById("main").style.width = "1026px";
+            }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
